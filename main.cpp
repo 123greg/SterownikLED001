@@ -23,7 +23,7 @@ void setup()
     }
 
     // Sprawdzenie istnienia pliku menu1.json i ewentualne jego utworzenie
-    if (!LittleFS.exists("/menu1.json")) {
+    if (!LittleFS.exists("/menu0.json")) {
         Serial.println("menu1.json not found. Creating default settings.");
         createDefaultSettings("/menu1.json");
     } else {
